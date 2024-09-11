@@ -25,6 +25,6 @@ P(\text{good pivot| median of three random elements}) &= 1 - P(\text{not a good 
 \end{align}
 $$
 
-Hence for any $n$, if you picking the median value of the first, middle, and last elements of an array increases your odds of pick a good pivot compared to arbitrarily picking the first element of the array.
+Hence for any $n$, picking the median value of the first, middle, and last elements of an array increases your odds of picking a good pivot compared to arbitrarily picking the first element of the array.
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
