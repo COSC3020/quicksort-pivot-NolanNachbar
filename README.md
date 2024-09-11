@@ -16,7 +16,7 @@ equally likely, i.e. the input array is ordered randomly.
 Your answer must derive probabilities for choosing a good pivot and
 quantitatively reason with them.
 
-For picking the first element for a randomized array, the odds of choosing a good pivot (an element that would be in the middle half when sorted) are $1/2$ because it will must be part of the middle $n/2$ elements. If we were to pick the median of the first,middle, and last elements, we know it would atleast have one element on either side of it in the sorted array. Thus the probability of the median element being a good pivot is 
+Picking the first element for a randomized array, the odds of choosing a good pivot (an element that would be in the middle half when sorted) are $1/2$ because it will must be part of the middle $n/2$ elements. If we were to pick the median of the first,middle, and last elements, we know it would atleast have one element on either side of it in the sorted array. Thus the probability of the median element being a good pivot is 
 
 $$
 \begin{align}
