@@ -21,14 +21,14 @@ For picking the first element for a randomized array, the odds of choosing a goo
 $$
 \begin{align}
 P(\text{good pivot| median of three random elements}) &= 1 - P(\text{not a good pivot| median of three random elements})\\ 
-&= 1 - \frac{(n - 3)}{2 \dot n}
+&= 1 - \frac{(n - 3)}{2 \cdot n}
 \end{align}
 $$
 This is greater than
 $$
 \begin{align}
 P(\text{good pivot| first element in the array}) &= 1 - P(\text{not a good pivot| first element in the array})\\ 
-&= 1 - \frac{(n)}{2 \dot n}\\
+&= 1 - \frac{(n)}{2 \cdot n}\\
 &= \frac{1}{2}
 \end{align}
 $$
