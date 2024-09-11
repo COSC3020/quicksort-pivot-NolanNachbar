@@ -21,10 +21,18 @@ For picking the first element for a randomized array, the odds of choosing a goo
 $$
 \begin{align}
 P(\text{good pivot| median of three random elements}) &= 1 - P(\text{not a good pivot| median of three random elements})\\ 
-&= 1 - \frac{(n - 3)}{2 \dot n} 
+&= 1 - \frac{(n - 3)}{2 \dot n}
+\end{align}
+$$
+This is greater than
+$$
+\begin{align}
+P(\text{good pivot| first element in the array}) &= 1 - P(\text{not a good pivot| first element in the array})\\ 
+&= 1 - \frac{(n)}{2 \dot n}\\
+&= \frac{1}{2}
 \end{align}
 $$
 
-Hence for any $n$, picking the median value of the first, middle, and last elements of an array increases your odds of picking a good pivot compared to arbitrarily picking the first element of the array.
+Hence for any $n > 3$, picking the median value of the first, middle, and last elements of an array increases your odds of picking a good pivot compared to arbitrarily picking the first element of the array.
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
