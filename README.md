@@ -24,7 +24,9 @@ P(\text{good pivot| median of three random elements}) &= 1 - P(\text{not a good 
 &= 1 - \frac{(n - 3)}{2 \cdot n}
 \end{align}
 $$
+
 This is greater than
+
 $$
 \begin{align}
 P(\text{good pivot| first element in the array}) &= 1 - P(\text{not a good pivot| first element in the array})\\ 
