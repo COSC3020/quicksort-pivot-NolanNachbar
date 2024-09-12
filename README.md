@@ -25,16 +25,17 @@ It should be noted that the odds of picking an element in $M$ is as likely as pi
 Now consider the possible combinations for the group that each of the three elements belong to,
 $$
 \begin{align}
-L,&M,H\\
-M,&M,L\\
-M,&M,M\\
-H,&H,L\\
-H,&H,M\\
-H,&M,M\\
-L,&L,M\\
-L,&L,H\\
+- L, L, L
+- H, H, H
+- M, M, M
+- L, M, H
+- M, M, L
+- H, H, L
+- H, H, M
+- H, M, M
+- L, L, M
+- L, L, H
 \end{align}
-
 $$
 
 
