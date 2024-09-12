@@ -22,22 +22,31 @@ Choosing a random pivot arbitrarily (including simply choosing the first element
 Now consider picking the median of the first, middle, and last elements of an array. Let $L,M,H$ denote elements from the sorted array lower than the lower than the middle half of the array, in the middle half of the array, and higher than the middle half of the array respectively.
 It should be noted that the odds of picking an element in $M$ is as likely as picking it from $L + H$. In other words $|M| = |H| + |L|$.
 
-Now consider the possible combinations for the group that each of the three elements belong to,
-$$
-\begin{align}
-- L, L, L
-- H, H, H
-- M, M, M
-- L, M, H
-- M, M, L
-- H, H, L
-- H, H, M
-- H, M, M
-- L, L, M
-- L, L, H
-\end{align}
-$$
+Consider the following cases for selecting the median pivot:
 
+- $L, L, L$
+- $H, H, H$
+- $M, M, M$ (each one could be from the lower half or higher half of M, so there are 8 of these)
+- $L, M, H$ (The M could be from the lower half or higher half of M, so there are 2 of these)
+- $M, M, L$ (each one could be from the lower half or higher half of M, so there are 4 of these)
+- $H, H, L$
+- $H, H, M$ (The M could be from the lower half or higher half of M, so there are 2 of these)
+- $H, M, M$ (each one could be from the lower half or higher half of M, so there are 4 of these)
+- $L, L, M$ (The M could be from the lower half or higher half of M, so there are 2 of these)
+- $L, L, H$
+
+### Cases Resulting in a Good Pivot
+
+These cases will result in a good pivot:
+
+- $M, M, M$ (each one could be from the lower half or higher half of M, so there are 8 of these)
+- $L, M, H$ (The M could be from the lower half or higher half of M, so there are 2 of these)
+- $M, M, L$ (each one could be from the lower half or higher half of M, so there are 4 of these)
+- $H, M, M$ (each one could be from the lower half or higher half of M, so there are 4 of these)
+
+
+Adding all of them up we have $26$ of them. Adding up the ones that would result in a good pivot, $8G + 2G + 4G + 4G = 18$.  
+So the odds of getting a good pivot when choosing the median of three pivots is $\frac{18}{24} = \frac{2}{3}$.
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
 I wasn't sure how to get started if my original one was wrong so I looked at htis one to see how to go about doing it. I 
