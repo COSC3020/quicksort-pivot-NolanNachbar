@@ -22,7 +22,7 @@ Choosing a random pivot arbitrarily (including simply choosing the first element
 Now consider picking the median of the first, middle, and last elements of an array. Let $L,M,H$ denote elements from the sorted array lower than the lower than the middle half of the array, in the middle half of the array, and higher than the middle half of the array respectively.
 It should be noted that the odds of picking an element in $M$ is as likely as picking it from $L + H$. In other words $|M| = |H| + |L|$.
 
-Consider the following cases for selecting the median pivot:
+Consider the following cases for selecting the three elements for the median pivot:
 
 - $L, L, L$
 - $H, H, H$
