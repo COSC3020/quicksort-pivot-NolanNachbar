@@ -52,5 +52,6 @@ So the odds of getting a good pivot when choosing the median of three pivots is 
 Median of the three has a $66.6\%$ chance of being a good pivot and picking the first element of the array has a $50\%$ chance of being a good pivot. Using the median of three method is better.
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
-I wasn't sure how to get started if my original one was wrong so I looked at htis one to see how to go about doing it. I just used the same online and notation for L and H as them though, the computations are my own. 
+
+I wasn't sure how to get started if my original one was wrong so I looked at this one to see how to go about doing it. I just used the same online and notation for L and H as them though, the computations are my own. 
 https://github.com/COSC3020/quicksort-pivot-ZachRenz.git
