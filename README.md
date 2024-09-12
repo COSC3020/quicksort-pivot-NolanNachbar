@@ -26,13 +26,13 @@ Consider the following cases for selecting the median pivot:
 
 - $L, L, L$
 - $H, H, H$
-- $M, M, M$  -each one could be from the lower half or higher half of M, so there are 8 of these  
-- $L, M, H$  -The M could be from the lower half or higher half of M, so there are 2 of these  
-- $M, M, L$  -each one could be from the lower half or higher half of M, so there are 4 of these  
+- $M, M, M$  - Each one could be from the lower half or higher half of M, so there are 8 of these  
+- $L, M, H$  - The M could be from the lower half or higher half of M, so there are 2 of these  
+- $M, M, L$  - Each one could be from the lower half or higher half of M, so there are 4 of these  
 - $H, H, L$
-- $H, H, M$  -The M could be from the lower half or higher half of M, so there are 2 of these  
-- $H, M, M$  -each one could be from the lower half or higher half of M, so there are 4 of these  
-- $L, L, M$  -The M could be from the lower half or higher half of M, so there are 2 of these  
+- $H, H, M$  - The M could be from the lower half or higher half of M, so there are 2 of these  
+- $H, M, M$  - Each one could be from the lower half or higher half of M, so there are 4 of these  
+- $L, L, M$  - The M could be from the lower half or higher half of M, so there are 2 of these  
 - $L, L, H$
 
 Adding all of them up we have $26$ of them. 
@@ -41,10 +41,10 @@ Adding all of them up we have $26$ of them.
 
 These cases will result in a good pivot:
 
-- $M, M, M$  -each one could be from the lower half or higher half of M, so there are 8 of these  
-- $L, M, H$  -The M could be from the lower half or higher half of M, so there are 2 of these  
-- $M, M, L$  -each one could be from the lower half or higher half of M, so there are 4 of these  
-- $H, M, M$  -each one could be from the lower half or higher half of M, so there are 4 of these  
+- $M, M, M$  - Each one could be from the lower half or higher half of M, so there are 8 of these  
+- $L, M, H$  - The M could be from the lower half or higher half of M, so there are 2 of these  
+- $M, M, L$  - Each one could be from the lower half or higher half of M, so there are 4 of these  
+- $H, M, M$  - Each one could be from the lower half or higher half of M, so there are 4 of these  
 
 Adding up the ones that would result in a good pivot, $8G + 2G + 4G + 4G = 18$.  
 So the odds of getting a good pivot when choosing the median of three pivots is $\frac{18}{24} = \frac{2}{3}$.
