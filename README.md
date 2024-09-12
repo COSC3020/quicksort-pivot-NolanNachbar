@@ -16,25 +16,27 @@ equally likely, i.e. the input array is ordered randomly.
 Your answer must derive probabilities for choosing a good pivot and
 quantitatively reason with them.
 
-For picking the first element for a randomized array, the odds of choosing a good pivot (an element that would be in the middle half when sorted) are $1/2$ because it will must be part of the middle $n/2$ elements. If we were to pick the median of the first,middle, and last elements, we know it would atleast have one element on either side of it in the sorted array. Thus the probability of the median element being a good pivot is 
+Recall that a good pivot is one that is located in the middle half for of the array when sorted.
+Choosing a random pivot arbitrarily (including simply choosing the first element), you have a $\frac{\frac{n}{2}}{n} = 50\%$ chance of choosing a good pivot.
 
+Now consider picking the median of the first, middle, and last elements of an array. Let $L,M,H$ denote elements from the sorted array lower than the lower than the middle half of the array, in the middle half of the array, and higher than the middle half of the array respectively.
+It should be noted that the odds of picking an element in $M$ is as likely as picking it from $L + H$. In other words $|M| = |H| + |L|$.
+
+Now consider the possible combinations for the group that each of the three elements belong to,
 $$
 \begin{align}
-P(\text{good pivot| median of three random elements}) &= 1 - P(\text{not a good pivot| median of three random elements})\\ 
-&= 1 - \frac{(n - 3)}{2 \cdot n}
+L,&M,H\\
+M,&M,L\\
+M,&M,M\\
+H,&H,L\\
+H,&H,M\\
+H,&M,M\\
+L,&L,M\\
+L,&L,H\\
 \end{align}
-$$
-
-This is greater than
 
 $$
-\begin{align}
-P(\text{good pivot| first element in the array}) &= 1 - P(\text{not a good pivot| first element in the array})\\ 
-&= 1 - \frac{(n)}{2 \cdot n}\\
-&= \frac{1}{2}
-\end{align}
-$$
 
-Hence for any $n > 3$, picking the median value of the first, middle, and last elements of an array increases your odds of picking a good pivot compared to arbitrarily picking the first element of the array.
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+I wasn't sure how to get started if my original one was wrong so I looked at htis one to see how to go about doing it. I 
