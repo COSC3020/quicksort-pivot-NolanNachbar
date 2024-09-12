@@ -35,6 +35,8 @@ Consider the following cases for selecting the median pivot:
 - $L, L, M$ (The M could be from the lower half or higher half of M, so there are 2 of these)
 - $L, L, H$
 
+Adding all of them up we have $26$ of them. 
+
 ### Cases Resulting in a Good Pivot
 
 These cases will result in a good pivot:
@@ -44,8 +46,7 @@ These cases will result in a good pivot:
 - $M, M, L$ (each one could be from the lower half or higher half of M, so there are 4 of these)
 - $H, M, M$ (each one could be from the lower half or higher half of M, so there are 4 of these)
 
-
-Adding all of them up we have $26$ of them. Adding up the ones that would result in a good pivot, $8G + 2G + 4G + 4G = 18$.  
+Adding up the ones that would result in a good pivot, $8G + 2G + 4G + 4G = 18$.  
 So the odds of getting a good pivot when choosing the median of three pivots is $\frac{18}{24} = \frac{2}{3}$.
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
