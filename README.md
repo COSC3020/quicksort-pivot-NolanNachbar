@@ -49,7 +49,7 @@ These cases will result in a good pivot:
 Adding up the ones that would result in a good pivot, $8 \cdot 1G + 2 \cdot 6 G + 4 \cdot 3 G + 4 \cdot 3 G = 18 G$.  
 So the odds of getting a good pivot when choosing the median of three pivots is $\frac{44}{64} = 0.6875 \\%$.
 
-Median of the three has a $68.75 \\%$ chance of being a good pivot and picking the first element of the array has a $50\%$ chance of being a good pivot. Using the median of three method is better.
+Median of the three has a $68.75 \\%$ chance of being a good pivot and picking the first element of the array has a $50\\%$ chance of being a good pivot. Using the median of three method is better.
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
 
