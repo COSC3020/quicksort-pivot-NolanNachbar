@@ -24,32 +24,32 @@ It should be noted that the odds of picking an element in $M$ is as likely as pi
 
 Consider the following cases for selecting the three elements for the median pivot:
 
-- $L, L, L$
-- $H, H, H$
-- $M, M, M$  - Each one could be from the lower half or higher half of M, so there are 8 of these  
-- $L, M, H$  - The M could be from the lower half or higher half of M, so there are 2 of these  
-- $M, M, L$  - Each one could be from the lower half or higher half of M, so there are 4 of these  
-- $H, H, L$
-- $H, H, M$  - The M could be from the lower half or higher half of M, so there are 2 of these  
-- $H, M, M$  - Each one could be from the lower half or higher half of M, so there are 4 of these  
-- $L, L, M$  - The M could be from the lower half or higher half of M, so there are 2 of these  
-- $L, L, H$
+1 permuation of - $L, L, L$ 
+1 permuation of - $H, H, H$
+1 permuation of - $M, M, M$  - Each one could be from the lower half or higher half of M, so there are 8 times the permutations of these  
+6 permuations of - $L, M, H$  - The M could be from the lower half or higher half of M, so there are 2 times the permutations of these  
+3 permuations of - $M, M, L$  - Each one could be from the lower half or higher half of M, so there are 4 times the permutations of these  
+3 permuations of - $H, H, L$
+3 permuations of - $H, H, M$  - The M could be from the lower half or higher half of M, so there are 2 times the permutations of these  
+3 permuations of- $H, M, M$  - Each one could be from the lower half or higher half of M, so there are 4 times the permutations of these  
+3 permuations of- $L, L, M$  - The M could be from the lower half or higher half of M, so there are 2 times the permutations of these  
+3 permuations of - $L, L, H$
 
-Adding all of them up we have $26$ of them. 
+Adding all of them up we have $1+1+8+2\cdot6+4\cdot3+1\cdot3+2\cdot3+4\cdot3+2\cdot3+1\cdot3 = 64$ of them. 
 
 ### Cases Resulting in a Good Pivot
 
 These cases will result in a good pivot:
 
-- $M, M, M$  - Each one could be from the lower half or higher half of M, so there are 8 of these  
-- $L, M, H$  - The M could be from the lower half or higher half of M, so there are 2 of these  
-- $M, M, L$  - Each one could be from the lower half or higher half of M, so there are 4 of these  
-- $H, M, M$  - Each one could be from the lower half or higher half of M, so there are 4 of these  
+1 permuation of - $M, M, M$  - Each one could be from the lower half or higher half of M, so there are 8 times the permutations of these  
+6 permuations of - $L, M, H$  - The M could be from the lower half or higher half of M, so there are 2 times the permutations of these  
+3 permuations of - $M, M, L$  - Each one could be from the lower half or higher half of M, so there are 4 times the permutations of these   
+3 permuations of- $H, M, M$  - Each one could be from the lower half or higher half of M, so there are 4 times the permutations of these 
 
-Adding up the ones that would result in a good pivot, $8G + 2G + 4G + 4G = 18$.  
-So the odds of getting a good pivot when choosing the median of three pivots is $\frac{18}{24} = \frac{2}{3}$.
+Adding up the ones that would result in a good pivot, $8 \cdot 1G + 2 \cdot 6 G + 4 \cdot 3 G + 4 \cdot 3 G = 18 G$.  
+So the odds of getting a good pivot when choosing the median of three pivots is $\frac{44}{64} = 0.6875$.
 
-Median of the three has a $66.6\%$ chance of being a good pivot and picking the first element of the array has a $50\%$ chance of being a good pivot. Using the median of three method is better.
+Median of the three has a $68.75 \\%$ chance of being a good pivot and picking the first element of the array has a $50\%$ chance of being a good pivot. Using the median of three method is better.
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
 
