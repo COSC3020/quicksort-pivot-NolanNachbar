@@ -55,3 +55,4 @@ I certify that I have listed all sources used to complete this exercise, includi
 
 I wasn't sure how to get started if my original one was wrong so I looked at this one to see how to go about doing it. I just used the same online and notation for L and H as them though, the computations are my own. 
 https://github.com/COSC3020/quicksort-pivot-ZachRenz.git
+Edit: I used it to check my work because I kept getting $2/3$. Once I noticed that I should be using permutations not combinations, I did the calculations oall on my own.
