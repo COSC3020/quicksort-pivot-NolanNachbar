@@ -17,7 +17,7 @@ Your answer must derive probabilities for choosing a good pivot and
 quantitatively reason with them.
 
 Recall that a good pivot is one that is located in the middle half for of the array when sorted.
-Choosing a random pivot arbitrarily (including simply choosing the first element), you have a $\frac{\frac{n}{2}}{n} = 50\%$ chance of choosing a good pivot.
+Choosing a random pivot arbitrarily (including simply choosing the first element), you have a $\frac{\frac{n}{2}}{n} = 50\\%$ chance of choosing a good pivot.
 
 Now consider picking the median of the first, middle, and last elements of an array. Let $L,M,H$ denote elements from the sorted array lower than the lower than the middle half of the array, in the middle half of the array, and higher than the middle half of the array respectively.
 It should be noted that the odds of picking an element in $M$ is as likely as picking it from $L + H$. In other words $|M| = |H| + |L|$.
